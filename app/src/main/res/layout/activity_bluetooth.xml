@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:background="#222222"-->
+<!--    tools:context=".MainActivity">-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btnBluetoothOn"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="30dp"-->
+<!--        android:layout_marginLeft="30dp"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:text="블루투스 ON"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btnBluetoothOff"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="8dp"-->
+<!--        android:layout_marginLeft="8dp"-->
+<!--        android:text="블루투스 OFF"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/btnBluetoothOn"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/btnBluetoothOn" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/tvBluetoothStatus"-->
+<!--        android:layout_width="170dp"-->
+<!--        android:layout_height="20dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:text="status"-->
+<!--        android:textColor="#ffff"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/btnBluetoothOn"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/btnBluetoothOn" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btnConnect"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:text="연결하기"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/tvBluetoothStatus"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/tvBluetoothStatus" />-->
+
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imageCPR"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="256dp"-->
+<!--        android:layout_marginBottom="40dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/tvReceiveData"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:srcCompat="@drawable/cpr_heart" />-->
+
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="BPM"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        android:textSize="20sp"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.673"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.727" />-->
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/tvReceiveData"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Receive"-->
+<!--        android:textColor="#ffff"-->
+<!--        android:textSize="30dp"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.43"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.722" />-->
+
+<!--    <com.github.mikephil.charting.charts.LineChart-->
+<!--        android:id="@+id/chart"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="300dp"-->
+<!--        android:layout_below="@id/tvReceiveData" />-->
+
+
+<!--    &lt;!&ndash;    <Button&ndash;&gt;-->
+<!--&lt;!&ndash;        android:id="@+id/btnSendData"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_marginTop="10dp"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:text="전송"&ndash;&gt;-->
+<!--&lt;!&ndash;        app:layout_constraintStart_toStartOf="@+id/btnConnect"&ndash;&gt;-->
+<!--&lt;!&ndash;        app:layout_constraintTop_toBottomOf="@+id/btnConnect" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;    <EditText&ndash;&gt;-->
+<!--&lt;!&ndash;        android:id="@+id/tvSendData"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_marginStart="8dp"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_marginLeft="8dp"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:ems="10"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:inputType="textPersonName"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:text="Send Data"&ndash;&gt;-->
+<!--&lt;!&ndash;        app:layout_constraintStart_toEndOf="@+id/btnSendData"&ndash;&gt;-->
+<!--&lt;!&ndash;        app:layout_constraintTop_toTopOf="@+id/btnSendData" />&ndash;&gt;-->
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Bluetooth">
+
+    <TextView
+        android:id="@+id/tvBluetoothStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bluetooth Status" />
+
+    <TextView
+        android:id="@+id/tvReceiveData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Received Data"
+        android:layout_below="@id/tvBluetoothStatus"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btnBluetoothOn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bluetooth On"
+        android:layout_below="@id/tvReceiveData"
+        android:layout_marginTop="16dp"/>
+
+
+    <Button
+        android:id="@+id/btnBluetoothOff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bluetooth Off"
+        android:layout_below="@id/btnBluetoothOn"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btnConnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connect"
+        android:layout_below="@id/btnBluetoothOff"
+        android:layout_marginTop="16dp"/>
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/chart"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/btnConnect"
+        android:layout_marginTop="16dp"/>
+
+</RelativeLayout>

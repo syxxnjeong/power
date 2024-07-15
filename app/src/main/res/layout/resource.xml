@@ -1,0 +1,98 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- 상단 부분: 심박수 그래프를 표시할 공간 -->
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/heartRateGraph"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- 하단 부분: 심박수 및 기타 정보를 표시할 레이아웃 -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <!-- 레이블을 수직으로 나열 -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="심박수"
+                android:textSize="18sp"
+                android:padding="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="진행 시간"
+                android:textSize="18sp"
+                android:padding="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="현재 환자 상태"
+                android:textSize="18sp"
+                android:padding="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="압박 횟수"
+                android:textSize="18sp"
+                android:padding="8dp" />
+        </LinearLayout>
+
+        <!-- 값을 수직으로 나열 -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/tvHeartRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 bpm"
+                android:textSize="24sp"
+                android:padding="8dp" />
+
+            <TextView
+                android:id="@+id/tvElapsedTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 sec"
+                android:textSize="24sp"
+                android:padding="8dp" />
+
+            <View
+                android:id="@+id/statusIndicator"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/red_circle"
+                android:layout_margin="8dp" />
+
+            <TextView
+                android:id="@+id/tvCompressionCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="24sp"
+                android:padding="8dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

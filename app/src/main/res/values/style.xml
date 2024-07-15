@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here -->
+        <item name="colorPrimary">#B22222</item> <!-- Primary color (상단바 색깔을 붉은색으로 변경) -->
+        <item name="colorPrimaryDark">#8B0000</item> <!-- Darker shade of the primary color -->
+        <item name="colorAccent">#FF4081</item>
+    </style>
+</resources>
