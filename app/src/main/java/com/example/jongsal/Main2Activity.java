@@ -11,9 +11,12 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
+import android.animation.AnimatorInflater;
+import android.animation.AnimatorSet;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.ImageView;
 import android.widget.Toast;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -33,6 +36,7 @@ public class Main2Activity extends AppCompatActivity {
     Button mBtnBluetoothOff;
     Button mBtnConnect;
     Button mBtnStartResourceActivity;
+    ImageView mImageView3;
 
     BluetoothAdapter mBluetoothAdapter;
     Set<BluetoothDevice> mPairedDevices;
@@ -58,6 +62,12 @@ public class Main2Activity extends AppCompatActivity {
         mBtnBluetoothOff = findViewById(R.id.btnBluetoothOff);
         mBtnConnect = findViewById(R.id.btnConnect);
         mBtnStartResourceActivity = findViewById(R.id.btnStartResourceActivity);
+        mImageView3 = findViewById(R.id.imageView3);
+
+        // 블루투스 아이콘에 애니메이션 설정
+        AnimatorSet animator = (AnimatorSet) AnimatorInflater.loadAnimator(this, R.anim.rotate_animation);
+        animator.setTarget(mImageView3);
+        animator.start();
 
         // BluetoothAdapter 초기화 시 BluetoothManager 사용
         BluetoothManager bluetoothManager = (BluetoothManager) getSystemService(Context.BLUETOOTH_SERVICE);
@@ -110,9 +120,9 @@ public class Main2Activity extends AppCompatActivity {
                     sendBroadcast(intent);
                 } else if (msg.what == BT_CONNECTING_STATUS) {
                     if (msg.arg1 == 1) {
-                        mTvBluetoothStatus.setText("활성화 상태입니다");
+                        mTvBluetoothStatus.setText("연동 상태입니다");
                     } else {
-                        mTvBluetoothStatus.setText("비활성화 상태입니다");
+                        mTvBluetoothStatus.setText("미연동 상태입니다");
                     }
                 }
             }

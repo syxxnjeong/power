@@ -7,6 +7,7 @@
     <!-- 상단 부분: 심박수 그래프를 표시할 공간 -->
     <com.jjoe64.graphview.GraphView
         android:id="@+id/heartRateGraph"
+        android:background="@drawable/view_border2"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1" />
@@ -21,6 +22,7 @@
         <!-- 레이블을 수직으로 나열 -->
         <LinearLayout
             android:orientation="vertical"
+            android:background="@drawable/view_border1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -28,36 +30,35 @@
 
             <TextView
                 android:layout_width="wrap_content"
+                android:fontFamily="@font/bmt"
                 android:layout_height="wrap_content"
                 android:text="심박수"
-                android:textSize="18sp"
+                android:textSize="24sp"
                 android:padding="8dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="진행 시간"
-                android:textSize="18sp"
+                android:fontFamily="@font/bmt"
+                android:textSize="24sp"
                 android:padding="8dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="현재 환자 상태"
-                android:textSize="18sp"
+                android:textSize="24sp"
+                android:fontFamily="@font/bmt"
                 android:padding="8dp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="압박 횟수"
-                android:textSize="18sp"
-                android:padding="8dp" />
+
         </LinearLayout>
 
         <!-- 값을 수직으로 나열 -->
         <LinearLayout
             android:orientation="vertical"
+            android:background="@drawable/view_border"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -68,6 +69,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="0 bpm"
+                android:fontFamily="@font/bmt"
                 android:textSize="24sp"
                 android:padding="8dp" />
 
@@ -76,23 +78,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="0 sec"
+                android:fontFamily="@font/bmt"
                 android:textSize="24sp"
                 android:padding="8dp" />
 
             <View
                 android:id="@+id/statusIndicator"
-                android:layout_width="24dp"
-                android:layout_height="24dp"
+                android:layout_width="29sp"
+                android:layout_height="29sp"
                 android:background="@drawable/red_circle"
                 android:layout_margin="8dp" />
 
-            <TextView
-                android:id="@+id/tvCompressionCount"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="0"
-                android:textSize="24sp"
-                android:padding="8dp" />
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>

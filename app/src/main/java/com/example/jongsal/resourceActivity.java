@@ -46,7 +46,6 @@ public class resourceActivity extends AppCompatActivity {
 
         tvHeartRate = findViewById(R.id.tvHeartRate);
         tvElapsedTime = findViewById(R.id.tvElapsedTime);
-        tvCompressionCount = findViewById(R.id.tvCompressionCount);
         statusIndicator = findViewById(R.id.statusIndicator);
         heartRateGraph = findViewById(R.id.heartRateGraph);
 
